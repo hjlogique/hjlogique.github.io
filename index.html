@@ -10,15 +10,50 @@
             color: #00E8FF;
         }
         .container{
-            margin: 35px;
+            margin: 5%;
+            width: 90%;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        #myImg{
+            float: left;
+        }
+        .column {
+            float: left;
+            width: 30%;
+            padding: 5px;
+        }
+
+        /* Clearfix (clear floats) */
+        .row::after {
+            content: "";
+            clear: both;
+            display: table;
         }
     </style>
 </head>
 <body>
-    <secton class = "container">
-        <h1>HENRY JEAN LOGIQUE</h1>
-        <p>I am a Web Applicaion Developer</p>
-        <img src="img/my_pic1.jpg">
-    </secton>
+    <section class = "container">
+        <div style = "margin-bottom: 50px;"> 
+            <img src="img/my_pic2.jpg" id = "myImg" alt = "My picture" style="width: 7%">
+            <div style = "margin-left: 120px;">
+                <h1 style = "padding-top: 15px;">HENRY JEAN LOGIQUE</h1>
+                <p> Applicaion Developer & Multimedia Designer</p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="column">
+              <img src="img/artwork1.jpg" alt = "Spacecrafts above ocean" style="width:100%">
+            </div>
+            <div class="column">
+                <img src="img/artwork3.jpg" alt="The mother spaceship" style="width:100%">
+              </div>
+            <div class="column">
+              <img src="img/artwork2.jpg" alt="Time Machine" style="width:100%">
+            </div>
+            
+          </div>
+      
+       
+    </section>
 </body>
 </html>
